@@ -1,0 +1,23 @@
+@use 'color' as c;
+@use 'typography' as t;
+@use '../util' as u;
+
+
+button {
+  padding: u.rem(16);
+  border: none;
+  border-radius: u.rem(28);
+  font-size: u.rem(18);
+  font-weight: t.$fw-600;
+  color: white;
+
+  &.btn-green {
+    background-color: c.$button-green;
+    box-shadow: 0 u.rem(5) u.rem(10) u.rem(3) c.$button-shadow-green;
+  }
+
+  &.btn-blue {
+    background-color: c.$button-blue;
+    box-shadow: 0 u.rem(5) u.rem(10) u.rem(3) c.$button-shadow-blue;
+  }
+}

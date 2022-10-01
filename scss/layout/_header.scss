@@ -1,0 +1,56 @@
+@use '../base' as b;
+@use '../util' as u;
+
+header {
+
+  @include u.breakpoint(large) {
+    padding-inline: u.rem(207);
+  }
+
+  img {
+    margin: u.rem(87) auto u.rem(71) auto;
+  }
+
+  h1 {
+    font-size: u.rem(32);
+    letter-spacing: -2%;
+    font-weight: b.$fw-600;
+    color: b.$text-color-header;
+    text-align: center;
+    margin-bottom: u.rem(16);
+
+    @include u.breakpoint(large) {
+      font-size: u.rem(44);
+      letter-spacing: 0.5%;
+    }
+  }
+
+  p {
+    font-weight: b.$fw-600;
+    font-size: u.rem(16);
+    letter-spacing: -1%;
+    line-height: 165%;
+    text-align: center;
+    margin-bottom: u.rem(48);
+
+    @include u.breakpoint(large) {
+      font-size: u.rem(19);
+      line-height: 155%;
+      letter-spacing: 1.25%;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: u.rem(25);
+    margin-bottom: u.rem(161);
+
+    @include u.breakpoint(large) {
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: u.rem(152);
+    }
+  }
+
+}

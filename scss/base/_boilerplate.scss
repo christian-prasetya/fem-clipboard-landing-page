@@ -35,6 +35,18 @@ body {
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
+  font-family: t.$font-primary;
+  font-size: u.rem(18);
+  color: c.$text-color-body;
+  padding: u.rem(32);
+  background: url(../../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+
+  @include u.breakpoint(large) {
+    background: url(../../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    padding-inline: u.rem(165);
+  }
 }
 
 /* A elements that don't have a class get default styles */
