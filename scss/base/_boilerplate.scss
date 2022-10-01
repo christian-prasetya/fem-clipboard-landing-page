@@ -1,12 +1,6 @@
-:root {
-  --clr-primary-strongCyan: hsl(171, 66%, 44%);
-  --clr-primary-lightBlue: hsl(233, 100%, 69%);
-  --clr-neutral-darkGrayishBlue: hsl(210, 10%, 33%);
-  --clr-neutral-grayishBlue: hsl(201, 11%, 66%);
-  --clr-shadow-cyan: hsla(171, 66%, 44%, 0.3);
-  --clr-shadow-blue: hsla(233, 100%, 69%, 0.3);
-  --clr-footer: hsl(220, 18%, 97%);
-}
+@use 'color' as c;
+@use 'typography' as t;
+@use '../util' as u;
 
 /* Box sizing rules */
 *,
@@ -23,8 +17,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
-ol[role=list] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
 }
 
@@ -45,8 +39,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -62,14 +55,13 @@ svg {
   html:focus-within {
     scroll-behavior: auto;
   }
+
   *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1,0 +1,21 @@
+:root {
+  --clr-primary-strongCyan: hsl(171, 66%, 44%);
+  --clr-primary-lightBlue: hsl(233, 100%, 69%);
+
+  --clr-neutral-darkGrayishBlue: hsl(210, 10%, 33%);
+  --clr-neutral-grayishBlue: hsl(201, 11%, 66%);
+
+  --clr-shadow-cyan: hsla(171, 66%, 44%, 0.3);
+  --clr-shadow-blue: hsla(233, 100%, 69%, 0.3);
+
+  --clr-footer: hsl(220, 18%, 97%);
+}
+
+$text-color-body: var(--clr-neutral-grayishBlue);
+$text-color-header: var(--clr-neutral-darkGrayishBlue);
+
+$button-green: var(--clr-primary-strongCyan);
+$button-blue: var(--clr-primary-strongCyan);
+
+$button-shadow-green: var(--clr-shadow-cyan);
+$button-shadow-blue: var(--clr-shadow-blue);
