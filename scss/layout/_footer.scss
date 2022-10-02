@@ -1,0 +1,38 @@
+@use '../base' as b;
+@use '../util' as u;
+
+.main-footer {
+  background-color: hsl(220, 18%, 97%);
+  width: 100%;
+  padding: u.rem(52);
+
+  .footer__logo img {
+    width: u.rem(55);
+    margin: 0 auto u.rem(44) auto;
+  }
+
+  .footer__links {
+    margin-bottom: u.rem(49);
+
+    ul {
+      text-align: center;
+      letter-spacing: 1%;
+
+      li {
+        list-style-type: none;
+        margin-bottom: u.rem(27);
+
+        a {
+          color: b.$text-color-header;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .footer__social {
+    display: flex;
+    gap: u.rem(40);
+    justify-content: center;
+  }
+}
