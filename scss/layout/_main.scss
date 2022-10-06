@@ -29,41 +29,77 @@ main {
       }
     }
 
-    .card__image img {
-      width: u.rem(313);
-      margin-bottom: u.rem(51);
-    }
-
-    .card__text {
+    .card {
       display: flex;
       flex-direction: column;
-      gap: u.rem(42);
+      align-items: center;
 
-      .card__text-info {
-        h3 {
-          font-size: u.rem(24);
-          font-weight: b.$fw-600;
-          letter-spacing: -2%;
-          color: b.$text-color-header;
-          text-align: center;
-          margin-bottom: u.rem(11);
+      @include u.breakpoint(large) {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: u.rem(106);
+        margin-left: u.rem(-100);
+      }
+
+      .card__image img {
+        width: u.rem(313);
+        margin-bottom: u.rem(51);
+
+        @include u.breakpoint(large) {
+          width: u.rem(761);
+          margin-bottom: 0;
         }
+      }
 
-        p {
-          font-size: u.rem(16);
-          letter-spacing: 0.75%;
-          line-height: 170%;
-          text-align: center;
+      .card__text {
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(42);
+        width: u.rem(339);
+
+        .card__text-info {
+          h3 {
+            font-size: u.rem(24);
+            font-weight: b.$fw-600;
+            letter-spacing: -2%;
+            color: b.$text-color-header;
+            text-align: center;
+            margin-bottom: u.rem(3);
+
+            @include u.breakpoint(large) {
+              text-align: left;
+            }
+          }
+
+          p {
+            font-size: u.rem(16);
+            letter-spacing: 0.75%;
+            line-height: 170%;
+            text-align: center;
+
+            @include u.breakpoint(large) {
+              text-align: left;
+            }
+          }
         }
       }
     }
+
   }
 
   .access {
     margin-bottom: u.rem(129);
 
+    @include u.breakpoint(large) {
+      margin-bottom: u.rem(162);
+    }
+
     .card__title {
       margin-bottom: u.rem(59);
+
+      @include u.breakpoint(large) {
+        margin-bottom: u.rem(110);
+      }
 
       h2 {
         font-size: u.rem(28);
@@ -85,6 +121,10 @@ main {
 
   .supercharge {
     margin-bottom: u.rem(130);
+
+    @include u.breakpoint(large) {
+      margin-bottom: u.rem(158);
+    }
 
     .card__title {
       margin-bottom: u.rem(90);
@@ -111,6 +151,11 @@ main {
       flex-direction: column;
       gap: u.rem(55);
 
+      @include u.breakpoint(large) {
+        flex-direction: row;
+        width: u.rem(1100);
+      }
+
       &__text {
         display: flex;
         flex-direction: column;
@@ -135,6 +180,10 @@ main {
             font-size: u.rem(16);
             letter-spacing: 0.75%;
             line-height: 170%;
+
+            @include u.breakpoint(large) {
+              width: u.rem(332);
+            }
           }
         }
       }
@@ -144,30 +193,60 @@ main {
   .company {
     margin-bottom: u.rem(170);
 
+    @include u.breakpoint(large) {
+      width: u.rem(1110);
+      margin-bottom: u.rem(158);
+    }
+
     .logo-container {
       display: flex;
       flex-direction: column;
       gap: u.rem(66);
       align-items: center;
 
+      @include u.breakpoint(large) {
+        flex-direction: row;
+      }
+
       .google {
         width: u.rem(137);
+
+        @include u.breakpoint(large) {
+          width: u.rem(165);
+        }
       }
 
       .ibm {
         width: u.rem(116);
+
+        @include u.breakpoint(large) {
+          width: u.rem(139);
+        }
       }
 
       .microsoft {
         width: u.rem(134);
+
+        @include u.breakpoint(large) {
+          width: u.rem(161);
+        }
+
       }
 
       .hp {
         width: u.rem(113);
+
+        @include u.breakpoint(large) {
+          width: u.rem(135);
+        }
       }
 
       .vector {
         width: u.rem(103);
+
+        @include u.breakpoint(large) {
+          width: u.rem(125);
+        }
       }
     }
   }
@@ -175,6 +254,11 @@ main {
   .cta {
     text-align: center;
     margin-bottom: u.rem(171);
+
+    @include u.breakpoint(large) {
+      width: u.rem(683);
+      margin-bottom: u.rem(150);
+    }
 
     h2 {
       font-size: u.rem(28);
@@ -195,6 +279,11 @@ main {
       display: flex;
       flex-direction: column;
       gap: u.rem(26);
+
+      @include u.breakpoint(large) {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
   }
 }
