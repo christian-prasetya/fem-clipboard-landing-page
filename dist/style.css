@@ -97,9 +97,15 @@ button.btn-green {
   background-color: var(--clr-primary-strongCyan);
   box-shadow: 0 0.3125rem 0.625rem 0.1875rem var(--clr-shadow-cyan);
 }
+button.btn-green:hover {
+  opacity: 0.8;
+}
 button.btn-blue {
   background-color: var(--clr-primary-lightBlue);
   box-shadow: 0 0.3125rem 0.625rem 0.1875rem var(--clr-shadow-blue);
+}
+button.btn-blue:hover {
+  opacity: 0.8;
 }
 
 header {
@@ -257,6 +263,12 @@ main .access .card__title h2 {
   color: var(--clr-neutral-darkGrayishBlue);
   margin-bottom: 1rem;
 }
+@media (min-width: 56.25em) {
+  main .access .card__title h2 {
+    font-size: 2.125rem;
+    letter-spacing: 1.3%;
+  }
+}
 main .access .card__title p {
   font-size: 1rem;
   line-height: 165%;
@@ -281,6 +293,11 @@ main .supercharge .card__title h2 {
   text-align: center;
   color: var(--clr-neutral-darkGrayishBlue);
   margin-bottom: 1rem;
+}
+@media (min-width: 56.25em) {
+  main .supercharge .card__title h2 {
+    font-size: 2.125rem;
+  }
 }
 main .supercharge .card__title p {
   font-size: 1rem;
@@ -404,6 +421,11 @@ main .cta h2 {
   margin-bottom: 1rem;
   color: var(--clr-neutral-darkGrayishBlue);
 }
+@media (min-width: 56.25em) {
+  main .cta h2 {
+    font-size: 2.1875rem;
+  }
+}
 main .cta p {
   font-size: 1rem;
   letter-spacing: 0.75%;
@@ -484,10 +506,12 @@ main .cta .cta-container {
   gap: 2.5rem;
   justify-content: center;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
   margin-top: 2rem;
+  height: 2rem;
 }
 .attribution a {
   color: hsl(228deg, 45%, 44%);

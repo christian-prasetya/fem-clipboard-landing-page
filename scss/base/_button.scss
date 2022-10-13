@@ -14,10 +14,18 @@ button {
   &.btn-green {
     background-color: c.$button-green;
     box-shadow: 0 u.rem(5) u.rem(10) u.rem(3) c.$button-shadow-green;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &.btn-blue {
     background-color: c.$button-blue;
     box-shadow: 0 u.rem(5) u.rem(10) u.rem(3) c.$button-shadow-blue;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }

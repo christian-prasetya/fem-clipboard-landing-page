@@ -62,9 +62,5 @@
     display: flex;
     gap: u.rem(40);
     justify-content: center;
-
-    @include u.breakpoint(large) {
-      // margin-top: u.rem(-44);
-    }
   }
 }
