@@ -196,7 +196,7 @@ main .keep-track .card {
     flex-direction: row;
     justify-content: flex-start;
     gap: 6.625rem;
-    margin-left: -6.25rem;
+    margin-left: -7.5rem;
   }
 }
 main .keep-track .card .card__image img {
